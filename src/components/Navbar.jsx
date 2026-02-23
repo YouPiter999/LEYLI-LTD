@@ -4,7 +4,7 @@ export default function Navbar() {
             <div className="max-w-7xl mx-auto flex items-center justify-between">
                 <a href="#" className="flex items-center gap-3 group">
                     <div className="w-11 h-11 rounded-xl overflow-hidden flex items-center justify-center group-hover:scale-105 transition-transform duration-300">
-                        <img src="/hero-logo.png" alt="LEYLI LTD" className="w-11 h-11 object-cover" />
+                        <img src={`${import.meta.env.BASE_URL}hero-logo.png`} alt="LEYLI LTD" className="w-11 h-11 object-cover" />
                     </div>
                     <span className="text-xl font-bold tracking-tight">LEYLI <span className="text-white/50 font-light">LTD</span></span>
                 </a>

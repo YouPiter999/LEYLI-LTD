@@ -15,19 +15,19 @@ const testimonials = [
         text: 'Боялись стать "мелкой рыбой" для крупного агентства, но здесь нашей команде дали 100% приоритет. Никаких скрытых комиссий. Платформа работает идеально!',
         name: 'Игорь К.',
         role: 'CEO финтех-стартапа',
-        avatar: '/reviewer-igor.png'
+        avatar: 'reviewer-igor.png'
     },
     {
         text: 'Прошлые подрядчики просто игнорировали мои правки. Эти ребята сразу дали доступ к GitHub и каждый день писали детальные апдейты. Максимально прозрачно.',
         name: 'Анна М.',
         role: 'Head of Marketing',
-        avatar: '/reviewer-anna.png'
+        avatar: 'reviewer-anna.png'
     },
     {
         text: 'Первые, кто не начал вымогать деньги за каждую кнопку после старта. Запустили магазин точно в срок, трафик пошёл уже на второй месяц.',
         name: 'Дмитрий В.',
         role: 'Founder',
-        avatar: '/reviewer-dmitry.png'
+        avatar: 'reviewer-dmitry.png'
     }
 ]
 
@@ -62,7 +62,7 @@ export default function Testimonials() {
                                 <div className="flex items-center gap-4 mt-auto pt-5 border-t border-white/5">
                                     <div className="w-14 h-14 rounded-full border-2 border-accent/20 overflow-hidden flex-shrink-0">
                                         <img
-                                            src={t.avatar}
+                                            src={`${import.meta.env.BASE_URL}${t.avatar}`}
                                             alt={t.name}
                                             className="w-full h-full object-cover"
                                         />

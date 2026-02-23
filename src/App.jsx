@@ -39,7 +39,7 @@ function FloatingLogo() {
             ctx.putImageData(imageData, 0, 0)
             setReady(true)
         }
-        img.src = '/hero-logo.png'
+        img.src = `${import.meta.env.BASE_URL}hero-logo.png`
     }, [])
 
     useEffect(() => {

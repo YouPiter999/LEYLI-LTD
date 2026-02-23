@@ -3,7 +3,7 @@ const team = [
         name: 'Александр',
         role: 'Lead Frontend',
         color: 'from-blue-500/20 to-cyan-500/20',
-        avatar: '/team-alexander.png',
+        avatar: 'team-alexander.png',
         highlight: 'Ускорил загрузку в 3×',
         description: 'Переписал архитектуру клиентского портала, ускорив загрузку в 3 раза. Пишет чистый код.',
         skills: ['React', 'Next.js', 'TypeScript', 'Performance']
@@ -12,7 +12,7 @@ const team = [
         name: 'Елена',
         role: 'UX/UI Дизайнер',
         color: 'from-purple-500/20 to-pink-500/20',
-        avatar: '/team-elena.png',
+        avatar: 'team-elena.png',
         highlight: '100% ROI за 12 часов',
         description: 'Спроектировала интерфейс для e-commerce проекта с окупаемостью за первые сутки.',
         skills: ['Figma', 'UX Research', 'Прототипы', 'Анимации']
@@ -21,7 +21,7 @@ const team = [
         name: 'Михаил',
         role: 'Tech Lead',
         color: 'from-emerald-500/20 to-teal-500/20',
-        avatar: '/team-mikhail.png',
+        avatar: 'team-mikhail.png',
         highlight: '15+ международных проектов',
         description: 'Выстроил безопасную серверную инфраструктуру со строгим соблюдением GDPR.',
         skills: ['Node.js', 'AWS', 'PostgreSQL', 'GDPR']
@@ -57,7 +57,7 @@ export default function Team() {
                             <div className="relative z-10">
                                 <div className="w-24 h-24 rounded-2xl border-2 border-white/10 mb-6 group-hover:scale-105 group-hover:border-accent/30 transition-all duration-300 overflow-hidden">
                                     <img
-                                        src={member.avatar}
+                                        src={`${import.meta.env.BASE_URL}${member.avatar}`}
                                         alt={member.name}
                                         className="w-full h-full object-cover grayscale-[30%] group-hover:grayscale-0 transition-all duration-500"
                                     />

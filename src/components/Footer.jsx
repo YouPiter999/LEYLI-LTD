@@ -6,7 +6,7 @@ export default function Footer() {
                     <div className="md:col-span-1">
                         <a href="#" className="flex items-center gap-3 mb-6">
                             <div className="w-12 h-12 rounded-xl overflow-hidden">
-                                <img src="/hero-logo.png" alt="LEYLI LTD" className="w-full h-full object-cover" />
+                                <img src={`${import.meta.env.BASE_URL}hero-logo.png`} alt="LEYLI LTD" className="w-full h-full object-cover" />
                             </div>
                             <span className="text-2xl font-bold tracking-tight text-white">
                                 LEYLI <span className="text-white/40 font-light">LTD</span>
