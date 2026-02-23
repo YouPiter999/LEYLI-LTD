@@ -1,0 +1,32 @@
+<svg viewBox="0 0 200 220" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2dd4bf" />
+      <stop offset="100%" stop-color="#0ea5e9" />
+    </linearGradient>
+  </defs>
+  <!-- Shield outline -->
+  <path d="M100 10 L180 50 L180 130 Q180 190 100 210 Q20 190 20 130 L20 50 Z"
+        fill="none" stroke="url(#shieldGrad)" stroke-width="6" stroke-linejoin="round"/>
+  <!-- Inner shield border -->
+  <path d="M100 25 L168 58 L168 128 Q168 180 100 198 Q32 180 32 128 L32 58 Z"
+        fill="none" stroke="url(#shieldGrad)" stroke-width="2.5" opacity="0.4"/>
+  <!-- Lion mane - stylized flowing curves -->
+  <g fill="none" stroke="url(#shieldGrad)" stroke-width="4.5" stroke-linecap="round">
+    <!-- Head outline -->
+    <path d="M85 65 Q60 70 55 95 Q52 115 60 130 Q68 145 85 150" opacity="0.9"/>
+    <!-- Mane curves -->
+    <path d="M85 65 Q95 55 110 58 Q130 62 140 80 Q148 95 142 115" opacity="0.8"/>
+    <path d="M142 115 Q138 130 125 140 Q110 150 95 148" opacity="0.8"/>
+    <!-- Inner mane detail -->
+    <path d="M80 80 Q70 85 65 100 Q62 112 68 125" stroke-width="3" opacity="0.5"/>
+    <path d="M90 68 Q105 65 118 72 Q132 82 135 100" stroke-width="3" opacity="0.5"/>
+    <path d="M135 100 Q133 118 122 130 Q110 140 98 138" stroke-width="3" opacity="0.5"/>
+    <!-- Eye -->
+    <circle cx="95" cy="95" r="4" fill="url(#shieldGrad)" stroke="none"/>
+    <!-- Nose -->
+    <path d="M82 110 Q88 118 82 125" stroke-width="3" opacity="0.7"/>
+    <!-- Jaw line -->
+    <path d="M70 135 Q80 155 100 155 Q115 155 125 145" stroke-width="3" opacity="0.6"/>
+  </g>
+</svg>
